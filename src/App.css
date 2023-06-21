@@ -1,0 +1,72 @@
+body {
+  background: white;
+}
+
+img{
+  height: auto;
+  width: 100%;
+}
+.manga-app > .row {
+  overflow-x: auto;
+  justify-content: center;
+  
+}
+
+.item{
+  display: inline-block;
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+    margin: 5px;
+    background-color: rgba(114, 112, 112, 0.322);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+
+.info{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.781);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  text-align: center;
+}
+
+.info > *{
+transform: translateY(20px);
+transition: transform 0.25s;
+}
+
+.info:hover{
+  opacity: 1;
+}
+
+.info:hover > *{
+transform: translateY(0);
+}
+
+.manga-name {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin: 0 0 1rem 0;
+}
+
+.rus-name {
+  font-size: 0.9rem;
+  color: #888;
+  vertical-align: middle;
+}
+.chapter{
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
